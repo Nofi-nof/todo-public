@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "firebase-your-app-id"
+  },
+  "targets": {
+    "firebase-your-app-id": {
+      "hosting": {
+        "todo-list-app": [
+          "firebase-your-app-id"
+        ],
+        "test-results": [
+          "firebase-your-test-results-id"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

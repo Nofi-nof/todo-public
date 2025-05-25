@@ -1,0 +1,55 @@
+{
+  "name": "your-app",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "deploy": "pnpm run build && firebase deploy --only hosting",
+    "test": "vitest --watch false",
+    "test:w": "vitest"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "firebase": "^10.8.1",
+    "flowbite-react": "^0.9.0",
+    "jsdom": "^25.0.1",
+    "react": "18.3.0-canary-3d9b20132-20240124",
+    "react-dom": "18.3.0-canary-3d9b20132-20240124"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.8.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.6.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "^3.0.2",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.38.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3",
+    "vite": "^5.1.0",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.14.2+sha256.06e65a4965baff6d6097f9c8f75c35f6d420974dbc03d775009056a69edfd271"
+}
